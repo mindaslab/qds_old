@@ -5,8 +5,8 @@ Rails 3.1.
 
 Usage
 
-class Blog < ActiveRecord::Base
-	searchable_by :title, :content
+class Blog < ActiveRecord::Base  
+	searchable_by :title, :content  
 end
 
 In console or in controller you can search like this
