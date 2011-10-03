@@ -1,0 +1,17 @@
+= Qds
+
+QDS is quick dirty search plugin for ruby on rails. It should work on
+Rails 3.1.
+
+=Usage
+
+class Blog < ActiveRecord::Base
+	searchable_by :title, :content
+end
+
+In console or in controller you can search like this
+
+Blog.search("mushroom salad")
+
+This will return ActiveRecord::Relation array of Blog objects that
+matches the search
